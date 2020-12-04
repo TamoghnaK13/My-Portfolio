@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Portfolio Landing Page</title>
+  </head>
+  <link rel="stylesheet" href="style.css">
+  <body>
+    <section class="banner" id="sec">
+      <header>
+        <a href="#" class="logo">Portfo<span>lio</span> </a>
+        <div id="toggle" onclick="toggle()"></div>
+      </header>
+      <div class="content">
+        <h2>Hello world,<br />I'm <span>Langat Fortune</span></h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+          nam iure ex explicabo eveniet magni, voluptas adipisci Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque hic, quo vel, dicta reprehenderit necessitatibus ea voluptates maiores vitae in . 
+        </p>
+        <a href="#">About  us</a>
+      </div>
+      <ul class="list">
+        <li>
+          <a href="#"
+            ><img src="./images/github.png" alt="" height="30px" width="30px"
+          /></a>
+        </li>
+        <li>
+          <a href="#"><img src="./images/twitter.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="./images/instagram.png" alt="" /></a>
+        </li>
+      </ul>
+    </section>
+    <div id="navigation">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Portfolio</a></li>
+        </ul>
+    </div>
+    <script>
+        function toggle(){
+            var sec = document.getElementById('sec');
+             var nav = document.getElementById('navigation');
+            sec.classList.toggle('active');
+            nav.classList.toggle('active');
+        }
+    </script>
+  </body>
+</html>
